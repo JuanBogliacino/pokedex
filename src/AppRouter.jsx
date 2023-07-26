@@ -1,4 +1,3 @@
-import React from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Navigation from './components/Navigation'
 import PokemonPage from './pages/PokemonPage'
@@ -12,11 +11,11 @@ const AppRouter = () => {
     <Footer />
 
     <Routes>
-        <Route path='/pokedex' element={<Navigation />}>
+        <Route path='/' element={<Navigation />}>
             <Route index element={<HomePage />} />
-            <Route path='/pokedex/pokemon/:id' element={<PokemonPage />} />
+            <Route path='/pokemon/:id' element={<PokemonPage />} />
             <Route index element={<HomePage />} />
-            <Route path='/pokedex/search' element={<SearchPage />} />
+            <Route path='/search' element={<SearchPage />} />
 
             <Route path='*' element={<Navigate to='/' />} />
         </Route>

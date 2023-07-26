@@ -3,7 +3,7 @@ import { primerMayuscula } from "../helper/helper"
 
 export const CardPokemon = ({ pokemon }) => {
   return (
-    <Link to={`/pokedex/pokemon/${pokemon.id}`} className="card-pokemon">
+    <Link to={`/pokemon/${pokemon.id}`} className="card-pokemon">
         <div className='card-img'>
 				<img
 					src={pokemon.sprites.other.dream_world.front_default}

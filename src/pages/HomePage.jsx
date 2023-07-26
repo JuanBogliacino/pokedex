@@ -5,7 +5,7 @@ import { PokemonContext } from '../context/PokemonContext'
 
 const HomePage = () => {
 
-  const {onClickLLoadMore, active, setActive, filteredPokemons} = useContext(PokemonContext)
+  const {onClickLLoadMore, active, setActive, filteredPokemons, loading} = useContext(PokemonContext)
 
   return (
     <>
@@ -31,7 +31,7 @@ const HomePage = () => {
      <PokemonList />
      <FilterBar />
      {
-      filteredPokemons.length == 0 &&
+      filteredPokemons.length == 0 && !loading &&
       <div className="container-btn-load-more container">
       <button className='btn-load-more' onClick={onClickLLoadMore}>
         Cargar más

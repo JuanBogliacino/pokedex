@@ -93,7 +93,7 @@ const SearchPage = () => {
             <div className="no-results-pokemon">
              <h2>no se encontraron pokemones</h2>
              <img src="https://i.blogs.es/4e1365/pikach/450_1000.jpg" alt="poke-img" />
-            </div> 
+            </div>
           }
         </section>
       )
