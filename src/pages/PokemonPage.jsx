@@ -25,7 +25,7 @@ const PokemonPage = () => {
     <main className='container main-pokemon'>
       {
         loading 
-        ? <h1 style={{textAlign:'center', marginTop:'50px'}}>Loading...</h1> 
+        ? <h1 style={{textAlign:'center', marginTop:'50px'}}>Cargando...</h1> 
         : (
           <>
            <div className='header-main-pokemon'>

@@ -9,7 +9,7 @@ const PokemonList = () => {
     <>
      {
       loading 
-      ? <h1 style={{textAlign:'center'}}>Loading...</h1>
+      ? <h1 style={{textAlign:'center'}}>Cargando...</h1>
       : (
         <section>
           {
